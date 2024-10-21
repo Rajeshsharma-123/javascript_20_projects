@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#stopwatch-container {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#time-display {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+button:disabled {
+    background-color: #ccc;
+    
+}
+
+#controls button {
+    background-color: #007bff;
+}
+
+button:hover {
+    background-color: #0653a5;
+}
+
+#laplist {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#laplist li {
+    margin: 5px 0;
+}
+
+#custom-time input, #display-options select {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#custom-time button {
+    background-color: #0d7ba3;
+}
+
+#display-options {
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #time-display {
+        font-size: 3rem;
+    }
+
+    button {
+        padding: 8px 15px;
+        margin: 5px;
+    }
+
+    #custom-time input, #display-options select {
+        font-size: 0.9rem;
+    }
+}
